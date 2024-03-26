@@ -1,5 +1,5 @@
 body {
-    background-image: url('./codes.jpg'); /* Path to your background image */
+    background-image: url('./codes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,11 +8,11 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    margin: 0; 
+    margin: 0;
     text-align: center;
 }
 
-.Learned{
+.Learned {
     margin-top: 10%;
 }
 
@@ -22,8 +22,8 @@ body {
     list-style: none;
     padding: 50px;
     background-color: rgba(31, 16, 238, 0.863);
-    width: 100%; 
-    box-sizing: border-box; 
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .header li {
@@ -36,8 +36,31 @@ body {
     padding: 10px;
 }
 
-.header li a:hover{
+.header li a:hover {
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
     border: none;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 50px;
+        background-color: rgba(31, 16, 238, 0.863);
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .text-center {
+        margin-top: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh; /* Setting height to 100% of the viewport height */
+    }
 }
